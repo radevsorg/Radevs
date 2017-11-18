@@ -1,0 +1,157 @@
+/* Reset */
+
+html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr, acronym, address, big, cite, code, del, dfn, em, img, ins, kbd, q, s, samp, small, strike, strong, sub, sup, tt, var, b, u, i, center, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td, article, aside, canvas, details, embed, figure, figcaption, footer, header, menu, output, ruby, section, summary, time, mark, audio, video {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    font-size: 100%;
+    vertical-align: baseline;
+}
+
+article, aside, details, figcaption, figure, footer, header, menu, section {
+    display: block;
+}
+/* Basic */
+
+@-ms-viewport {
+    width: device-width;
+}
+
+body {
+    overflow-style: auto;
+}
+
+@media screen and (max-width: 480px) {
+
+    html, body {
+        min-width: 320px;
+    }
+
+}
+
+
+body.is-loading *, body.is-loading *:before, body.is-loading *:after {
+    -moz-animation: none !important;
+    -webkit-animation: none !important;
+    -ms-animation: none !important;
+    animation: none !important;
+    -moz-transition: none !important;
+    -webkit-transition: none !important;
+    -ms-transition: none !important;
+    transition: none !important;
+}
+
+.center{
+    text-align: center;
+}
+
+.h-line{
+    width: 30%;
+    height: 1px;
+    background-color: #1f423c;
+    margin: 20px auto 70px auto;
+}
+
+.heading-pg{
+    font-size: 3em;
+    text-transform: uppercase;
+    margin: 0;
+    line-height: 1;
+}
+/* Type */
+
+html {
+    font-size: 13pt;
+}
+
+@media screen and (max-width: 1680px) {
+
+    html {
+        font-size: 11pt;
+    }
+
+}
+
+@media screen and (max-width: 1280px) {
+
+    html {
+        font-size: 11pt;
+    }
+
+}
+
+@media screen and (max-width: 980px) {
+
+    html {
+        font-size: 12pt;
+    }
+
+}
+
+@media screen and (max-width: 736px) {
+
+    html {
+        font-size: 12pt;
+    }
+
+}
+
+@media screen and (max-width: 480px) {
+
+    html {
+        font-size: 12pt;
+    }
+
+}
+
+body {
+    font-family: "Poppins", sans-serif;
+    font-weight: 300;
+    font-size: 1rem;
+    line-height: 1.65;
+    overflow-x: hidden;
+    background-color: #b9b9b9;
+}
+
+a {
+    text-decoration: none;
+}
+
+p {
+    margin: 0 0 2rem 0;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    line-height: 1.5;
+    margin: 0 0 1rem 0;
+    color: #555;
+}
+
+h1 a, h2 a, h3 a, h4 a, h5 a, h6 a {
+    color: inherit;
+    text-decoration: none;
+}
+
+h2 {
+    font-size: 1.75rem;
+}
+
+h3 {
+    font-size: 1.35rem;
+}
+
+h4 {
+    font-size: 1.1rem;
+}
+
+h5 {
+    font-size: 0.9rem;
+}
+
+h6 {
+    font-size: 0.7rem;
+}
+
+.align-center {
+    text-align: center;
+}

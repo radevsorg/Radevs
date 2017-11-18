@@ -1,23 +1,541 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <title>Title</title>
-    <style>
-        .img{
-            text-align: center;
-            margin: 150px auto;
-            display: inline-block;
-            width: 100%;
-        }
-        img{
-            margin:  auto;
-        }
-    </style>
-</head>
-<body>
-    <div class="img">
-        <img src="under-construction-girl.png" alt="under-construction">
-    </div>
-</body>
+<!DOCTYPE HTML>
+<html>
+	<head>
+		<title>Radevs-Web</title>
+		<meta charset="utf-8" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
+		<meta name="viewport" content="width=device-width, initial-scale=1" />
+		<script src="assets/js/modernizr.custom.25376.js"></script>
+		<script src="assets/js/bubble-button/TweenMax.min.js"></script>
+
+		<link href='http://fonts.googleapis.com/css?family=Trocchi|Open+Sans+Condensed:700,300,300italic' rel='stylesheet' type='text/css' />
+		<link rel="stylesheet" href="assets/css/font-awesome.min.css" />
+		<link rel="stylesheet" href="assets/css/main.css" />
+		<link rel="stylesheet" href="assets/css/reset.css" />
+		<link rel="stylesheet" href="assets/css/words-effect/words.css" />
+		<link rel="stylesheet" href="assets/css/web-banner.css" />
+		<link rel="stylesheet" href="assets/css/nav-button/button.css" />
+		<link rel="stylesheet" href="assets/css/bubble-button/buble-button.css" />
+		<link rel="stylesheet" href="assets/css/design-projects/design-projects.css" />
+
+		<script src="test-app.js"></script>
+		<script src="assets/js/design-projects/design-projects.js"></script>
+
+
+
+		<script src="assets/js/snap.svg-min.js"></script>
+		<link rel="stylesheet" type="text/css" href="assets/css/nav-menu/navigator-components.css" />
+
+		<!--[if IE]>
+			<script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+		<![endif]-->
+	</head>
+	<body onload="test()">
+
+	<!-- Bottom Button -->
+	<div class="hi-icon-wrap hi-icon-effect-8 hidden">
+		<a href="#home" class="hi-icon hi-icon-archive smoothScroll hide"></a>
+	</div>
+
+	<!-- Top Button -->
+	<button class="button button--fill button--round button--effect-2" id="showMenu">
+					<span class="morph-shape" data-morph-active="M251,150c0,93.5-29.203,143-101,143S49,243.5,49,150C49,52.5,78.203,7,150,7S251,51.5,251,150z">
+						<svg width="100%" height="100%" viewBox="0 0 300 300" preserveAspectRatio="none">
+							<path d="M281,150c0,71.797-59.203,131-131,131S19,221.797,19,150S78.203,19,150,19S281,78.203,281,150z"/>
+						</svg>
+					</span>
+		<span class="button__text"><i class="fa fa-bars" aria-hidden="true"></i></span>
+	</button>
+
+<!-- Main Body -->
+	<section id="perspective" class="perspective effect-moveleft">
+	<!-- Header -->
+		<nav class="outer-nav right vertical">
+			<a href="#home" class="icon-home">Home</a>
+			<a href="#services" class="icon-services">Services</a>
+			<a href="#design" class="icon-design">Design</a>
+			<a href="#web-development" class="icon-web-development">Web Development</a>
+			<a href="#footer" class="icon-contact">Contact</a>
+		</nav>
+
+		<div class="container">
+
+			<div class="wrapper-nav"><!-- wrapper needed for scroll -->
+
+				<header id="home">
+					<div class="back-bird"></div>
+
+					<div class="logo-header">
+						<section class="rw-wrapper">
+							<h2 class="rw-sentence">
+								<span>What would</span>
+								<span>you like</span>
+								<span>to</span>
+								<span class="rw-words">
+									<span>share</span>
+									<span>make</span>
+									<span>build</span>
+									<span>enjoy</span>
+									<span>create</span>
+									<span>invent</span>
+								</span>
+								<span>today?</span>
+							</h2>
+						</section>
+					</div>
+
+					<div class="fore-bird"></div>
+
+						<svg xmlns="http://www.w3.org/2000/svg" version="1.1" class="svg-filters">
+							<defs>
+								<filter id="filter-goo-4">
+									<feGaussianBlur in="SourceGraphic" stdDeviation="7" result="blur" />
+									<feColorMatrix in="blur" mode="matrix" values="1 0 0 0 0  0 1 0 0 0  0 0 1 0 0  0 0 0 19 -9" result="goo" />
+								</filter>
+							</defs>
+						</svg>
+						<a id="component-4" class="button--4 smoothScroll" href="#services">
+							<i class="fa fa-arrow-down" aria-hidden="true"></i>
+							<span class="button__bg" style="filter: url('#filter-goo-4')">
+							<span class="blob"></span>
+							<span class="blob"></span>
+							<span class="blob"></span>
+							<span class="blob"></span>
+							</span>
+						</a>
+
+				</header>
+
+		<!-- One -->
+				<section id="services" class="wrapper-cnt style2">
+					<p class="heading-pg center">services</p>
+
+					<div class="h-line"></div>
+
+					<div class="container-services">
+						<article class="services appear">
+							<div class="icon"><i class="fa fa-terminal" aria-hidden="true"></i></div>
+							<div class="service-content">
+								<h3>Art Of Coding</h3>
+								<p>Some Content Lorem Ipsum Dolor Sit Amet Zaedno S Ahmed Na Lov Za Med Bez Da Si Plashtame Taksa Smet Za Tova Sme Naj - Otpred!</p>
+							</div>
+						</article>
+
+						<article class="services appear">
+							<div class="icon"><i class="fa fa-desktop" aria-hidden="true"></i></div>
+							<div class="service-content">
+								<h3>Responsive Design</h3>
+								<p>Some Content Lorem Ipsum Dolor Sit Amet Zaedno S Ahmed Na Lov Za Med Bez Da Si Plashtame Taksa Smet Za Tova Sme Naj - Otpred!</p>
+							</div>
+						</article>
+
+						<article class="services appear">
+							<div class="icon"><i class="fa fa-internet-explorer" aria-hidden="true"></i></div>
+							<div class="service-content">
+								<h3>Cross Browser Platforms</h3>
+								<p>Some Content Lorem Ipsum Dolor Sit Amet Zaedno S Ahmed Na Lov Za Med Bez Da Si Plashtame Taksa Smet Za Tova Sme Naj - Otpred!</p>
+							</div>
+						</article>
+
+						<article class="services appear">
+							<div class="icon"><i class="fa fa-american-sign-language-interpreting" aria-hidden="true"></i></div>
+							<div class="service-content">
+								<h3>Pixel Perfect</h3>
+								<p>Some Content Lorem Ipsum Dolor Sit Amet Zaedno S Ahmed Na Lov Za Med Bez Da Si Plashtame Taksa Smet Za Tova Sme Naj - Otpred!</p>
+							</div>
+						</article>
+
+						<article class="services appear">
+							<div class="icon"><i class="fa fa-book" aria-hidden="true"></i></div>
+							<div class="service-content">
+								<h3>Useful Documentation</h3>
+								<p>Some Content Lorem Ipsum Dolor Sit Amet Zaedno S Ahmed Na Lov Za Med Bez Da Si Plashtame Taksa Smet Za Tova Sme Naj - Otpred!</p>
+							</div>
+						</article>
+
+						<article class="services appear">
+							<div class="icon"><i class="fa fa-truck" aria-hidden="true"></i></div>
+							<div class="service-content">
+								<h3>Fast Delivery</h3>
+								<p>Some Content Lorem Ipsum Dolor Sit Amet Zaedno S Ahmed Na Lov Za Med Bez Da Si Plashtame Taksa Smet Za Tova Sme Naj - Otpred!</p>
+							</div>
+						</article>
+					</div>
+				</section>
+
+		<!--	 Two -->
+				<section id="two" class="wrapper-cnt style2">
+					<embed src="ParallaxSlider/p-slider.html" class="embeded-content">
+				</section>
+
+		<!--	 Three -->
+				<section id="design" class="wrapper-cnt style2">
+					<p class="heading-pg center">design</p>
+
+					<div class="h-line"></div>
+
+					<div id="galleryTab">
+						<a data-rel="all"   class="filter active">View all</a>
+						<a data-rel="logos"  class="filter">Logo Design</a>
+						<a data-rel="brochure"  class="filter">Brochures</a>
+						<a data-rel="menu"  class="filter">Menu Restaurant</a>
+						<a data-rel="others"  class="filter">others</a>
+					</div>
+
+					<div class="gallery-wrap">
+
+						<div class="grid fancybox" data-fancybox-group="logos" data-filter="brochure">
+							<figure class="effect-jazz">
+								<img src="images/brochures/brochure.jpg" alt="img25"/>
+								<figcaption>
+									<h2>Dynamic <span>Jazz</span></h2>
+									<p>When Jazz starts to chase cars, the whole world stands still.</p>
+									<a href="#">View more</a>
+								</figcaption>
+							</figure>
+						</div>
+
+						<div class="grid fancybox" data-fancybox-group="gallery" data-filter="logos">
+							<figure class="effect-jazz">
+								<img src="images/logos/logo.jpg" alt="img25"/>
+								<figcaption>
+									<h2>Dynamic <span>Jazz</span></h2>
+									<p>When Jazz starts to chase cars, the whole world stands still.</p>
+									<a href="#">View more</a>
+								</figcaption>
+							</figure>
+						</div>
+
+						<div class="grid fancybox" data-fancybox-group="gallery" data-filter="menu">
+							<figure class="effect-jazz">
+								<img src="images/menus/menu.jpg" alt="img25"/>
+								<figcaption>
+									<h2>Dynamic <span>Jazz</span></h2>
+									<p>When Jazz starts to chase cars, the whole world stands still.</p>
+									<a href="#">View more</a>
+								</figcaption>
+							</figure>
+						</div>
+
+						<div class="grid fancybox" data-fancybox-group="gallery" data-filter="others">
+							<figure class="effect-jazz">
+								<img src="images/others/1.jpg" alt="img25"/>
+								<figcaption>
+									<h2>Dynamic <span>Jazz</span></h2>
+									<p>When Jazz starts to chase cars, the whole world stands still.</p>
+									<a href="#">View more</a>
+								</figcaption>
+							</figure>
+						</div>
+
+						<div class="grid fancybox" data-fancybox-group="gallery" data-filter="brochure">
+							<figure class="effect-jazz">
+								<img src="images/brochures/brochure2.jpg" alt="img25"/>
+								<figcaption>
+									<h2>Dynamic <span>Jazz</span></h2>
+									<p>When Jazz starts to chase cars, the whole world stands still.</p>
+									<a href="#">View more</a>
+								</figcaption>
+							</figure>
+						</div>
+
+						<div class="grid fancybox" data-fancybox-group="gallery" data-filter="logos">
+							<figure class="effect-jazz">
+								<img src="images/logos/logo2.jpg" alt="img25"/>
+								<figcaption>
+									<h2>Dynamic <span>Jazz</span></h2>
+									<p>When Jazz starts to chase cars, the whole world stands still.</p>
+									<a href="#">View more</a>
+								</figcaption>
+							</figure>
+						</div>
+						<div class="grid fancybox" data-fancybox-group="gallery" data-filter="menu">
+							<figure class="effect-jazz">
+								<img src="images/menus/menu2.jpg" alt="img25"/>
+								<figcaption>
+									<h2>Dynamic <span>Jazz</span></h2>
+									<p>When Jazz starts to chase cars, the whole world stands still.</p>
+									<a href="#">View more</a>
+								</figcaption>
+							</figure>
+						</div>
+
+						<div class="grid fancybox" data-fancybox-group="gallery" data-filter="others">
+							<figure class="effect-jazz">
+								<img src="images/others/2.jpg" alt="img25"/>
+								<figcaption>
+									<h2>Dynamic <span>Jazz</span></h2>
+									<p>When Jazz starts to chase cars, the whole world stands still.</p>
+									<a href="#">View more</a>
+								</figcaption>
+							</figure>
+						</div>
+
+						<div class="grid fancybox" data-fancybox-group="logos" data-filter="brochure">
+							<figure class="effect-jazz">
+								<img src="images/brochures/brochure3.jpg" alt="img25"/>
+								<figcaption>
+									<h2>Dynamic <span>Jazz</span></h2>
+									<p>When Jazz starts to chase cars, the whole world stands still.</p>
+									<a href="#">View more</a>
+								</figcaption>
+							</figure>
+						</div>
+
+						<div class="grid fancybox" data-fancybox-group="gallery" data-filter="logos">
+							<figure class="effect-jazz">
+								<img src="images/logos/logo3.jpg" alt="img25"/>
+								<figcaption>
+									<h2>Dynamic <span>Jazz</span></h2>
+									<p>When Jazz starts to chase cars, the whole world stands still.</p>
+									<a href="#">View more</a>
+								</figcaption>
+							</figure>
+						</div>
+
+						<div class="grid fancybox" data-fancybox-group="gallery" data-filter="menu">
+							<figure class="effect-jazz">
+								<img src="images/menus/menu3.jpg" alt="img25"/>
+								<figcaption>
+									<h2>Dynamic <span>Jazz</span></h2>
+									<p>When Jazz starts to chase cars, the whole world stands still.</p>
+									<a href="#">View more</a>
+								</figcaption>
+							</figure>
+						</div>
+
+						<div class="grid fancybox" data-fancybox-group="gallery" data-filter="others">
+							<figure class="effect-jazz">
+								<img src="images/others/3.jpg" alt="img25"/>
+								<figcaption>
+									<h2>Dynamic <span>Jazz</span></h2>
+									<p>When Jazz starts to chase cars, the whole world stands still.</p>
+									<a href="#">View more</a>
+								</figcaption>
+							</figure>
+						</div>
+
+						<div class="grid fancybox" data-fancybox-group="gallery" data-filter="logos">
+							<figure class="effect-jazz">
+								<img src="images/logos/logo4.jpg" alt="img25"/>
+								<figcaption>
+									<h2>Dynamic <span>Jazz</span></h2>
+									<p>When Jazz starts to chase cars, the whole world stands still.</p>
+									<a href="#">View more</a>
+								</figcaption>
+							</figure>
+						</div>
+
+						<div class="grid fancybox" data-fancybox-group="gallery" data-filter="menu">
+							<figure class="effect-jazz">
+								<img src="images/menus/menu4.jpg" alt="img25"/>
+								<figcaption>
+									<h2>Dynamic <span>Jazz</span></h2>
+									<p>When Jazz starts to chase cars, the whole world stands still.</p>
+									<a href="#">View more</a>
+								</figcaption>
+							</figure>
+						</div>
+
+						<div class="grid fancybox" data-fancybox-group="gallery" data-filter="others">
+							<figure class="effect-jazz">
+								<img src="images/others/4.jpg" alt="img25"/>
+								<figcaption>
+									<h2>Dynamic <span>Jazz</span></h2>
+									<p>When Jazz starts to chase cars, the whole world stands still.</p>
+									<a href="#">View more</a>
+								</figcaption>
+							</figure>
+						</div>
+
+						<div class="grid fancybox" data-fancybox-group="gallery" data-filter="others">
+							<figure class="effect-jazz">
+								<img src="images/others/5.jpg" alt="img25"/>
+								<figcaption>
+									<h2>Dynamic <span>Jazz</span></h2>
+									<p>When Jazz starts to chase cars, the whole world stands still.</p>
+									<a href="#">View more</a>
+								</figcaption>
+							</figure>
+						</div>
+
+					</div>
+				</section>
+
+		<!--	 Four -->
+				<section id="four" class="wrapper-cnt style3">
+					<div class="inner">
+						<article class="align-center">
+							<p>Nam vel ante sit amet libero scelerisque facilisis eleifend vitae urna</p>
+							<h2>Morbi maximus justo</h2>
+						</article>
+					</div>
+				</section>
+
+		<!--	 Five -->
+				<section id="web-development" class="wrapper-cnt style2">
+					<p class="heading-pg center">web projects</p>
+
+					<div class="h-line"></div>
+
+					<article class="web-projects-container">
+						<figure class="snip-fg">
+							<img src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/331810/sample108.jpg" alt="sample108" />
+							<figcaption>
+								<h3>Inverness McKenzie</h3>
+								<p>The only skills I have the patience to learn are those that have no real application in life.</p>
+							</figcaption>
+							<a href="#"></a>
+						</figure>
+
+						<figure class="snip-fg">
+							<img src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/331810/sample108.jpg" alt="sample108" />
+							<figcaption>
+								<h3>Inverness McKenzie</h3>
+								<p>The only skills I have the patience to learn are those that have no real application in life.</p>
+							</figcaption>
+							<a href="#"></a>
+						</figure>
+
+						<figure class="snip-fg">
+							<img src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/331810/sample108.jpg" alt="sample108" />
+							<figcaption>
+								<h3>Inverness McKenzie</h3>
+								<p>The only skills I have the patience to learn are those that have no real application in life.</p>
+							</figcaption>
+							<a href="#"></a>
+						</figure>
+					</article>
+				</section>
+
+		<!-- Footer -->
+				<footer id="footer">
+					<div class="copyright">
+						&copy; Untitled. All rights reserved.
+					</div>
+				</footer>
+			</div>
+		<!-- Scripts -->
+			<script src="assets/js/jquery.min.js"></script>
+			<script src="assets/js/jquery.scrollex.min.js"></script>
+			<script src="assets/js/skel.min.js"></script>
+			<script src="assets/js/util.js"></script>
+			<script src="assets/js/web-banner.js"></script>
+
+
+			<script src="assets/js/classie.js"></script>
+			<script src="assets/js/menu.js"></script>
+
+			<script src="assets/js/bubble-button/bubble-button.js"></script>
+
+		<!--Header Script -->
+			<script>
+				var logo = document.querySelector('.logo-header'),
+						blurredBird = document.querySelector('.back-bird'),
+						foreBird = document.querySelector('.fore-bird');
+
+
+				window.addEventListener('scroll', function() {
+
+					var scrolled = window.scrollY;
+
+					logo.style.transform = "translate(0px," + scrolled/1.5 +"%)";
+					blurredBird.style.transform = "translate(0px,-" + scrolled/20 + "%)";
+					foreBird.style.transform = "translate(0px,-" + scrolled/20 + "%)";
+
+				});
+
+
+				var forEach = function (array, callback) {
+					for (var i = 0; i < array.length; i++) {
+						callback.call(null, i, array[i]);
+					}
+				};
+			</script>
+		<!--Button Script -->
+			<script>
+				(function() {
+
+					function extend( a, b ) {
+						for( var key in b ) {
+							if( b.hasOwnProperty( key ) ) {
+								a[key] = b[key];
+							}
+						}
+						return a;
+					}
+
+					function SVGButton( el, options ) {
+						this.el = el;
+						this.options = extend( {}, this.options );
+						extend( this.options, options );
+						this.init();
+					}
+
+					SVGButton.prototype.options = {
+						speed : { reset : 800, active : 500 },
+						easing : { reset : mina.elastic, active : mina.easein }
+					};
+
+					SVGButton.prototype.init = function() {
+						this.shapeEl = this.el.querySelector( 'span.morph-shape' );
+
+						var s = Snap( this.shapeEl.querySelector( 'svg' ) );
+						this.pathEl = s.select( 'path' );
+						this.paths = {
+							reset : this.pathEl.attr( 'd' ),
+							active : this.shapeEl.getAttribute( 'data-morph-active' )
+						};
+
+						this.initEvents();
+					};
+
+					SVGButton.prototype.initEvents = function() {
+						this.el.addEventListener( 'mouseover', this.down.bind(this) );
+						this.el.addEventListener( 'touchstart', this.down.bind(this) );
+
+						this.el.addEventListener( 'mouseup', this.up.bind(this) );
+						this.el.addEventListener( 'touchend', this.up.bind(this) );
+
+						this.el.addEventListener( 'mouseout', this.up.bind(this) );
+					};
+
+					SVGButton.prototype.down = function() {
+						this.pathEl.stop().animate( { 'path' : this.paths.active }, this.options.speed.active, this.options.easing.active );
+					};
+
+					SVGButton.prototype.up = function() {
+						this.pathEl.stop().animate( { 'path' : this.paths.reset }, this.options.speed.reset, this.options.easing.reset );
+					};
+
+					[].slice.call( document.querySelectorAll( 'button.button--effect-2' ) ).forEach( function( el ) {
+						new SVGButton( el, {
+							speed : { reset : 1000, active : 1000 },
+							easing : { reset : mina.elastic, active : mina.elastic }
+						} );
+					} );
+
+				})();
+			</script>
+		<!--Smooth Scrolling -->
+			<script>
+				$(function() {
+					// This should prevent problems with carousel, scrollspy, etc...
+					$('.smoothScroll').click(function() {
+						if (location.pathname.replace(/^\//, '') == this.pathname.replace(/^\//, '') && location.hostname == this.hostname) {
+							var target = $(this.hash);
+							target = target.length ? target : $('[name=' + this.hash.slice(1) + ']');
+							if (target.length) {
+								$('html,body').animate({
+									scrollTop: target.offset().top
+								}, 800);
+								return false;
+							}
+						}
+					});
+				});
+			</script>
+		</div>
+		</section>
+	</body>
 </html>

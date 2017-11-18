@@ -1,0 +1,60 @@
+.button {
+	margin: 10px;
+	background: none;
+	border: none;
+	width: 250px;
+	height: 105px;
+	outline: none;
+	position: fixed;
+	padding: 0;
+	cursor: pointer;
+	-webkit-tap-highlight-color: rgba(0,0,0,0);
+	-webkit-tap-highlight-color: transparent; /* For some Androids */
+	-webkit-touch-callout: none;
+	-webkit-user-select: none;
+	-khtml-user-select: none;
+	-moz-user-select: none;
+	-ms-user-select: none;
+	user-select: none;
+	z-index: 90000;
+}
+
+.button--round {
+	width: 70px;
+	height: 70px;
+}
+
+.button__text {
+	display: block;
+	padding: 5px;
+	text-align: center;
+	position: relative;
+	z-index: 9000;
+	font-size: 1.5em;
+	color: #fff;
+	font-weight: bold;
+	-webkit-touch-callout: none;
+	-webkit-user-select: none;
+	-khtml-user-select: none;
+	-moz-user-select: none;
+	-ms-user-select: none;
+	user-select: none;
+}
+
+.morph-shape {
+	position: absolute;
+	width: 100%;
+	height: 100%;
+	top: 0;
+	left: 0;
+}
+
+
+.button--fill .morph-shape svg {
+	fill: #1f423c;
+}
+
+.button--round .morph-shape svg {
+	stroke-width: 7px;
+}
+
