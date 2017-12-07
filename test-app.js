@@ -1,5 +1,12 @@
 function test(){
+    //preventing reload when local links are clicked
+    $('ul.cl-effect-12 a').click(function (event) {
+        event.preventDefault();
+        event.stopPropagation();
+        return false;
+    });
 
+    //scroll event functions
     function scrollFunc(){
         let y = window.scrollY;
         let top = window.pageYOffset;

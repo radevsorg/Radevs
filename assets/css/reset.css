@@ -46,7 +46,7 @@ body.is-loading *, body.is-loading *:before, body.is-loading *:after {
 }
 
 .h-line{
-    width: 30%;
+    width: 50%;
     height: 1px;
     background-color: #1f423c;
     margin: 20px auto 70px auto;
