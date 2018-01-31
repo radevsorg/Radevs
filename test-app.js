@@ -1,10 +1,6 @@
 function test(){
     //preventing reload when local links are clicked
-    $('ul.cl-effect-12 a').click(function (event) {
-        event.preventDefault();
-        event.stopPropagation();
-        return false;
-    });
+
 
     //scroll event functions
     function scrollFunc(){
@@ -16,7 +12,7 @@ function test(){
         let elementOffsetSrv = $('#services').offset().top;
         let distanceServices      = elementOffsetSrv - scrollTop;
 
-        if(distanceServices <= 400 && distanceServices >= -500){
+        if(distanceServices <= 400){
             $('.services').removeClass('appear');
         }else{
             $('.services').addClass('appear');

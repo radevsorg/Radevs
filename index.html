@@ -11,19 +11,21 @@
 		<script src="https://cdnjs.cloudflare.com/ajax/libs/fancybox/3.2.1/jquery.fancybox.min.js"></script>
 
 		<link href='http://fonts.googleapis.com/css?family=Trocchi|Open+Sans+Condensed:700,300,300italic' rel='stylesheet' type='text/css' />
-		<link rel="stylesheet" href="assets/css/font-awesome.min.css" />
-		<link rel="stylesheet" href="assets/css/main.css" />
-		<link rel="stylesheet" href="assets/css/reset.css" />
+		<link rel="stylesheet" type="text/css" href="assets/css/font-awesome.min.css" />
+		<link rel="stylesheet" type="text/css" href="assets/css/main.css" />
+		<link rel="stylesheet" type="text/css" href="assets/css/reset.css" />
 
-		<link rel="stylesheet" href="assets/css/words-effect/words.css" />
-		<link rel="stylesheet" href="assets/css/nav-button/button.css" />
-		<link rel="stylesheet" href="assets/css/bubble-button/buble-button.css" />
-		<link rel="stylesheet" href="assets/css/design-projects/design-projects.css" />
-		<link rel="stylesheet" href="assets/css/web-projects.css" />
-		<link rel="stylesheet" href="assets/css/design-links/design-links.css">
+		<link rel="stylesheet" type="text/css" href="assets/css/words-effect/words.css" />
+		<link rel="stylesheet" type="text/css" href="assets/css/nav-button/button.css" />
+		<link rel="stylesheet" type="text/css" href="assets/css/bubble-button/buble-button.css" />
+		<link rel="stylesheet" type="text/css" href="assets/css/web-projects.css" />
+		<link rel="stylesheet" type="text/css" href="assets/css/bottom-button/bottom-button.css">
+		<link rel="stylesheet" type="text/css" href="assets/css/design-gallery/basic-gallery.css">
+		<link rel="stylesheet" type="text/css" href="assets/css/button-design-view-all/buttons.css">
+		<link rel="stylesheet" type="text/css" href="assets/css/design-aside-panel/linkstyles.css">
 
 		<script src="test-app.js"></script>
-		<script src="assets/js/design-projects/design-projects.js"></script>
+
 
 
 
@@ -42,7 +44,7 @@
 	</div>
 
 	<!-- Top Button -->
-	<button class="button button--fill button--round button--effect-2" id="showMenu">
+	<button class="btn button--fill button--round button--effect-2" id="showMenu">
 					<span class="morph-shape" data-morph-active="M251,150c0,93.5-29.203,143-101,143S49,243.5,49,150C49,52.5,78.203,7,150,7S251,51.5,251,150z">
 						<svg width="100%" height="100%" viewBox="0 0 300 300" preserveAspectRatio="none">
 							<path d="M281,150c0,71.797-59.203,131-131,131S19,221.797,19,150S78.203,19,150,19S281,78.203,281,150z"/>
@@ -57,8 +59,8 @@
 		<nav class="outer-nav right vertical">
 			<a href="#home" class="icon-home">Home</a>
 			<a href="#services" class="icon-services">Services</a>
-			<a href="#design" class="icon-design">Design</a>
 			<a href="#web-development" class="icon-web-development">Web Development</a>
+			<a href="#design" class="icon-design">Design</a>
 			<a href="#footer" class="icon-contact">Contact</a>
 		</nav>
 
@@ -173,212 +175,6 @@
 					</section>
 
 			<!--	 Three -->
-					<section id="design" class="wrapper-cnt style2">
-						<p class="heading-pg center">design</p>
-
-						<div class="h-line"></div>
-
-						<div id="galleryTab">
-							<nav class="cl-effect-12">
-								<a 	data-rel="all"   	class="link-design filter active" >View all</a>
-								<a 	data-rel="logos" 	class="link-design filter" >Logo Design</a>
-								<a 	data-rel="brochure"	class="link-design filter" >Brochures</a>
-								<a 	data-rel="menu"  	class="link-design filter" >Menu Restaurant</a>
-								<a 	data-rel="others"	class="link-design filter" >Others</a>
-							</nav>
-						</div>
-
-						<div class="gallery-wrap">
-
-							<div class="grid fancybox" data-fancybox-group="logos" data-filter="brochure">
-								<figure class="effect-jazz">
-									<img src="images/brochures/brochure.jpg" alt="img25"/>
-									<figcaption>
-										<h2>Dynamic <span>Jazz</span></h2>
-										<p>When Jazz starts to chase cars, the whole world stands still.</p>
-										<a href="#">View more</a>
-									</figcaption>
-								</figure>
-							</div>
-
-							<div class="grid fancybox" data-fancybox-group="gallery" data-filter="logos">
-								<figure class="effect-jazz">
-									<img src="images/logos/logo.jpg" alt="img25"/>
-									<figcaption>
-										<h2>Dynamic <span>Jazz</span></h2>
-										<p>When Jazz starts to chase cars, the whole world stands still.</p>
-										<a href="#">View more</a>
-									</figcaption>
-								</figure>
-							</div>
-
-							<div class="grid fancybox" data-fancybox-group="gallery" data-filter="menu">
-								<figure class="effect-jazz">
-									<img src="images/menus/menu.jpg" alt="img25"/>
-									<figcaption>
-										<h2>Dynamic <span>Jazz</span></h2>
-										<p>When Jazz starts to chase cars, the whole world stands still.</p>
-										<a href="#">View more</a>
-									</figcaption>
-								</figure>
-							</div>
-
-							<div class="grid fancybox" data-fancybox-group="gallery" data-filter="others">
-								<figure class="effect-jazz">
-									<img src="images/others/1.jpg" alt="img25"/>
-									<figcaption>
-										<h2>Dynamic <span>Jazz</span></h2>
-										<p>When Jazz starts to chase cars, the whole world stands still.</p>
-										<a href="#">View more</a>
-									</figcaption>
-								</figure>
-							</div>
-
-							<div class="grid fancybox" data-fancybox-group="gallery" data-filter="brochure">
-								<figure class="effect-jazz">
-									<img src="images/brochures/brochure2.jpg" alt="img25"/>
-									<figcaption>
-										<h2>Dynamic <span>Jazz</span></h2>
-										<p>When Jazz starts to chase cars, the whole world stands still.</p>
-										<a href="#">View more</a>
-									</figcaption>
-								</figure>
-							</div>
-
-							<div class="grid fancybox" data-fancybox-group="gallery" data-filter="logos">
-								<figure class="effect-jazz">
-									<img src="images/logos/logo2.jpg" alt="img25"/>
-									<figcaption>
-										<h2>Dynamic <span>Jazz</span></h2>
-										<p>When Jazz starts to chase cars, the whole world stands still.</p>
-										<a href="#">View more</a>
-									</figcaption>
-								</figure>
-							</div>
-							<div class="grid fancybox" data-fancybox-group="gallery" data-filter="menu">
-								<figure class="effect-jazz">
-									<img src="images/menus/menu2.jpg" alt="img25"/>
-									<figcaption>
-										<h2>Dynamic <span>Jazz</span></h2>
-										<p>When Jazz starts to chase cars, the whole world stands still.</p>
-										<a href="#">View more</a>
-									</figcaption>
-								</figure>
-							</div>
-
-							<div class="grid fancybox" data-fancybox-group="gallery" data-filter="others">
-								<figure class="effect-jazz">
-									<img src="images/others/2.jpg" alt="img25"/>
-									<figcaption>
-										<h2>Dynamic <span>Jazz</span></h2>
-										<p>When Jazz starts to chase cars, the whole world stands still.</p>
-										<a href="#">View more</a>
-									</figcaption>
-								</figure>
-							</div>
-
-							<div class="grid fancybox" data-fancybox-group="logos" data-filter="brochure">
-								<figure class="effect-jazz">
-									<img src="images/brochures/brochure3.jpg" alt="img25"/>
-									<figcaption>
-										<h2>Dynamic <span>Jazz</span></h2>
-										<p>When Jazz starts to chase cars, the whole world stands still.</p>
-										<a href="#">View more</a>
-									</figcaption>
-								</figure>
-							</div>
-
-							<div class="grid fancybox" data-fancybox-group="gallery" data-filter="logos">
-								<figure class="effect-jazz">
-									<img src="images/logos/logo3.jpg" alt="img25"/>
-									<figcaption>
-										<h2>Dynamic <span>Jazz</span></h2>
-										<p>When Jazz starts to chase cars, the whole world stands still.</p>
-										<a href="#">View more</a>
-									</figcaption>
-								</figure>
-							</div>
-
-							<div class="grid fancybox" data-fancybox-group="gallery" data-filter="menu">
-								<figure class="effect-jazz">
-									<img src="images/menus/menu3.jpg" alt="img25"/>
-									<figcaption>
-										<h2>Dynamic <span>Jazz</span></h2>
-										<p>When Jazz starts to chase cars, the whole world stands still.</p>
-										<a href="#">View more</a>
-									</figcaption>
-								</figure>
-							</div>
-
-							<div class="grid fancybox" data-fancybox-group="gallery" data-filter="others">
-								<figure class="effect-jazz">
-									<img src="images/others/3.jpg" alt="img25"/>
-									<figcaption>
-										<h2>Dynamic <span>Jazz</span></h2>
-										<p>When Jazz starts to chase cars, the whole world stands still.</p>
-										<a href="#">View more</a>
-									</figcaption>
-								</figure>
-							</div>
-
-							<div class="grid fancybox" data-fancybox-group="gallery" data-filter="logos">
-								<figure class="effect-jazz">
-									<img src="images/logos/logo4.jpg" alt="img25"/>
-									<figcaption>
-										<h2>Dynamic <span>Jazz</span></h2>
-										<p>When Jazz starts to chase cars, the whole world stands still.</p>
-										<a href="#">View more</a>
-									</figcaption>
-								</figure>
-							</div>
-
-							<div class="grid fancybox" data-fancybox-group="gallery" data-filter="menu">
-								<figure class="effect-jazz">
-									<img src="images/menus/menu4.jpg" alt="img25"/>
-									<figcaption>
-										<h2>Dynamic <span>Jazz</span></h2>
-										<p>When Jazz starts to chase cars, the whole world stands still.</p>
-										<a href="#">View more</a>
-									</figcaption>
-								</figure>
-							</div>
-
-							<div class="grid fancybox" data-fancybox-group="gallery" data-filter="others">
-								<figure class="effect-jazz">
-									<img src="images/others/4.jpg" alt="img25"/>
-									<figcaption>
-										<h2>Dynamic <span>Jazz</span></h2>
-										<p>When Jazz starts to chase cars, the whole world stands still.</p>
-										<a href="#">View more</a>
-									</figcaption>
-								</figure>
-							</div>
-
-							<div class="grid fancybox" data-fancybox-group="gallery" data-filter="others">
-								<figure class="effect-jazz">
-									<img src="images/others/5.jpg" alt="img25"/>
-									<figcaption>
-										<h2>Dynamic <span>Jazz</span></h2>
-										<p>When Jazz starts to chase cars, the whole world stands still.</p>
-										<a href="#">View more</a>
-									</figcaption>
-								</figure>
-							</div>
-
-						</div>
-					</section>
-
-			<!--	 Four -->
-					<section id="four" class="wrapper-cnt style3">
-						<div class="inner">
-							<article class="align-center">
-								<p>Nam vel ante sit amet libero scelerisque facilisis eleifend vitae urna</p>
-								<h2>Morbi maximus justo</h2>
-							</article>
-						</div>
-					</section>
-
-			<!--	 Five -->
 					<section id="web-development" class="wrapper-cnt style2">
 						<p class="heading-pg center">web projects</p>
 
@@ -411,7 +207,148 @@
 								</figcaption>
 								<a href="#"></a>
 							</figure>
+
+							<figure class="snip-fg">
+								<img src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/331810/sample108.jpg" alt="sample108" />
+								<figcaption>
+									<h3>Inverness McKenzie</h3>
+									<p>The only skills I have the patience to learn are those that have no real application in life.</p>
+								</figcaption>
+								<a href="#"></a>
+							</figure>
 						</article>
+					</section>
+
+
+					<!--	 Four -->
+					<section id="four" class="wrapper-cnt style3">
+						<div class="inner">
+							<article class="align-center">
+								<p>Nam vel ante sit amet libero scelerisque facilisis eleifend vitae urna</p>
+								<h2>Morbi maximus justo</h2>
+							</article>
+						</div>
+					</section>
+
+			<!--	 Five -->
+
+					<section id="design" class="wrapper-cnt style2">
+						<p class="heading-pg center">design</p>
+
+						<div class="h-line"></div>
+
+						<div class="gallery-wrap">
+							<section class="figures-design">
+
+
+								<figure class="design-fgr">
+									<img src="images/others/4.jpg">
+									<figcaption class="figcaption">
+										<h3>Title</h3>
+										<p>Description.</p>
+									</figcaption>
+								</figure>
+
+								<aside class="right-banner">
+									<article class="banner-content">
+										<a class="link--yaku" href="#">
+											<span>R</span><span>a</span><span>d</span><span>e</span><span>v</span>
+										</a>
+									</article>
+
+									<!-- for mobile experience-->
+									<script>
+										// For Demo purposes only (show hover effect on mobile devices)
+										[].slice.call( document.querySelectorAll('.grid a') ).forEach( function(el) {
+											el.onclick = function() { return false; }
+										} );
+									</script>
+								</aside>
+
+								<figure class="design-fgr">
+									<img src="images/others/4.jpg">
+									<figcaption class="figcaption">
+										<h3>Title</h3>
+										<p>Description.</p>
+									</figcaption>
+								</figure>
+
+								<figure class="design-fgr">
+									<img src="images/others/4.jpg">
+									<figcaption class="figcaption">
+										<h3>Title</h3>
+										<p>Description.</p>
+									</figcaption>
+								</figure>
+
+								<figure class="design-fgr">
+									<img src="images/others/4.jpg">
+									<figcaption class="figcaption">
+										<h3>Title</h3>
+										<p>Description.</p>
+									</figcaption>
+								</figure>
+
+								<figure class="design-fgr">
+									<img src="images/others/4.jpg">
+									<figcaption class="figcaption">
+										<h3>Title</h3>
+										<p>Description.</p>
+									</figcaption>
+								</figure>
+
+								<figure class="design-fgr">
+									<img src="images/others/4.jpg">
+									<figcaption class="figcaption">
+										<h3>Title</h3>
+										<p>Description.</p>
+									</figcaption>
+								</figure>
+
+								<figure class="design-fgr">
+									<img src="images/others/4.jpg">
+									<figcaption class="figcaption">
+										<h3>Title</h3>
+										<p>Description.</p>
+									</figcaption>
+								</figure>
+
+								<figure class="design-fgr">
+									<img src="images/others/4.jpg">
+									<figcaption class="figcaption">
+										<h3>Title</h3>
+										<p>Description.</p>
+									</figcaption>
+								</figure>
+
+								<figure class="design-fgr">
+									<img src="images/others/4.jpg">
+									<figcaption class="figcaption">
+										<h3>Title</h3>
+										<p>Description.</p>
+									</figcaption>
+								</figure>​
+
+								<figure class="design-fgr">
+									<img src="images/others/4.jpg">
+									<figcaption class="figcaption">
+										<h3>Title</h3>
+										<p>Description.</p>
+									</figcaption>
+								</figure>​
+
+								<!-- Has Style in Basic Gallery ---btn-design -->
+								<a href="Gallery/Gallery.html" class="btn-desgn">
+									<button class="btn-des-more button--antiman button--inverted ">
+										<span>View Full Gallery</span>
+									</button>
+								</a>
+
+							</section>
+
+
+						</div>
+
 					</section>
 
 			<!-- Footer -->

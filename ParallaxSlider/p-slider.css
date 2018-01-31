@@ -147,14 +147,14 @@ svg {
 }
 .slide:nth-child(1) .slide__bg {
     left: 0;
-    background-image: url("https://s3-us-west-2.amazonaws.com/s.cdpn.io/142996/3d-slider-3.jpg");
+    background-image: url("images/first.jpg");
 }
 .slide:nth-child(1) .slide__overlay-path {
-    fill: #e99c7e;
+    fill: #0d7ddb;
 }
 @media (max-width: 991px) {
     .slide:nth-child(1) .slide__text {
-        background-color: rgba(233, 156, 126, 0.8);
+        background-color: rgba(13, 125, 219, 0.8);
     }
 }
 .slide:nth-child(2) {
@@ -162,14 +162,14 @@ svg {
 }
 .slide:nth-child(2) .slide__bg {
     left: -50%;
-    background-image: url("https://s3-us-west-2.amazonaws.com/s.cdpn.io/142996/3d-slider-2.jpg");
+    background-image: url("images/second.jpg");
 }
 .slide:nth-child(2) .slide__overlay-path {
-    fill: #e1ccae;
+    fill: rgba(23, 133, 99, 1);
 }
 @media (max-width: 991px) {
     .slide:nth-child(2) .slide__text {
-        background-color: rgba(225, 204, 174, 0.8);
+        background-color: rgba(25, 139, 99, 0.8);
     }
 }
 .slide:nth-child(3) {
@@ -177,14 +177,15 @@ svg {
 }
 .slide:nth-child(3) .slide__bg {
     left: -100%;
-    background-image: url("https://s3-us-west-2.amazonaws.com/s.cdpn.io/142996/3d-slider-1.jpg");
+    background-image: url("images/third.jpg");
+    background-position-y: 70%;
 }
 .slide:nth-child(3) .slide__overlay-path {
-    fill: #adc5cd;
+    fill: #3f534a;
 }
 @media (max-width: 991px) {
     .slide:nth-child(3) .slide__text {
-        background-color: rgba(173, 197, 205, 0.8);
+        background-color: rgba(63, 83, 74, 0.8);
     }
 }
 .slide:nth-child(4) {
@@ -192,14 +193,14 @@ svg {
 }
 .slide:nth-child(4) .slide__bg {
     left: -150%;
-    background-image: url("https://s3-us-west-2.amazonaws.com/s.cdpn.io/142996/3d-slider-4.jpg");
+    background-image: url("images/fourth.jpg");
 }
 .slide:nth-child(4) .slide__overlay-path {
-    fill: #cbc6c3;
+    fill: #aba9ac;
 }
 @media (max-width: 991px) {
     .slide:nth-child(4) .slide__text {
-        background-color: rgba(203, 198, 195, 0.8);
+        background-color: rgba(171, 169, 172, 0.8);
     }
 }
 .slide__content {

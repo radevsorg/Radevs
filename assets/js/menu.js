@@ -44,7 +44,7 @@
 				perspectiveWrapper = document.getElementById( 'perspective' ),
 				container = perspectiveWrapper.querySelector( '.container' ),
 				contentWrapper = container.querySelector( '.wrapper-nav' );
-		var currentOffsets = '';
+		var currentOffsets = 'home';
 		$('a.icon-home').click(function(){ currentOffsets = 'home'; isScrolled = false; closeModal() });
 		$('a.icon-services').click(function(){ currentOffsets = 'services'; isScrolled = false; closeModal()});
 		$('a.icon-design').click(function(){ currentOffsets = 'design'; isScrolled = false; closeModal()});

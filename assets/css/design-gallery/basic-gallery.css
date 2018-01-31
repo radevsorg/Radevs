@@ -1,0 +1,130 @@
+.figures-design{
+    max-width: 1175px;
+    margin: 0 auto;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+.design-fgr {
+    display: block;
+    height: 250px;
+    flex-basis: 30.5%;
+    min-width: 300px;
+    max-width: 361px;
+    flex-grow: 0;
+    margin: 0 15px 30px 15px;
+    cursor: pointer;
+    -webkit-transform: perspective(500px);
+    -webkit-transform-style: preserve-3d;
+    -webkit-transition: .5s;
+}
+.design-fgr:hover {
+    -webkit-transform: perspective(500px) rotateX(90deg) translateY(-125px) translateZ(125px);
+}
+img {
+    background-color: #222;
+    box-shadow: 0 20px 15px -10px hsla(0,0%,0%,.25);
+    display: block;
+    height: 250px;
+    width: 100%;
+    min-width: 300px;
+    -webkit-transition: .5s;
+}
+.design-fgr:hover img {
+    box-shadow: none;
+}
+.figcaption {
+    display: block;
+    background-color: #222;
+    color: #fff;
+    padding: 30px;
+    height: 250px;
+    box-sizing: border-box;
+    -webkit-transform: rotateX(-90deg);
+    -webkit-transform-origin: 100% 0;
+    -webkit-transition: .5s;
+}
+.design-fgr:hover .figcaption {
+    box-shadow: 0 20px 15px -10px hsla(0,0%,0%,.25);
+}
+.right-banner{
+    text-align: center;
+    display: block;
+    flex-basis: calc(30.5% * 2 + 30px);
+    flex-grow: 0;
+    margin: 0 15px 30px 15px;
+    max-width: 752px;
+    min-width: 630px;
+    height: 250px;
+    background-color: #1f423c;
+    order:2;
+}
+
+.design-fgr:nth-of-type(1){
+    order:1;
+}
+.design-fgr:nth-of-type(2){
+    order:3;
+}
+.design-fgr:nth-of-type(3){
+    order:4;
+}
+.design-fgr:nth-of-type(4){
+    order:5;
+}
+.design-fgr:nth-of-type(5){
+    order:6;
+}
+.design-fgr:nth-of-type(6){
+    order:7;
+}
+.design-fgr:nth-of-type(7){
+    order:8;
+}
+.design-fgr:nth-of-type(8){
+    order:9;
+}
+.design-fgr:nth-of-type(9){
+    order:10;
+}
+.design-fgr:nth-of-type(10){
+    order:11;
+}
+
+.btn-desgn{
+    width:100%;
+    max-width: 400px;
+    order: 12;
+    alignment: right;
+}
+
+@media screen and (max-width: 1091px) {
+    .design-fgr:nth-of-type(2){
+        order: 2;
+    }
+    .right-banner{
+        order: 3;
+    }
+    .figures-design{
+        text-align: center;
+    }
+}
+
+@media screen and (max-width: 692px){
+    .right-banner{
+        order: 1;
+        min-width: 400px;
+    }
+    .design-fgr:nth-of-type(1){
+        order: 3;
+    }
+    .design-fgr{
+        flex-basis: calc(30.5% * 2 + 30px);
+        max-width: 752px;
+        min-width: 400px;
+    }
+    .figures-design{
+        margin: 15px auto;
+    }
+}
+

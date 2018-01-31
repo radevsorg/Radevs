@@ -1,0 +1,515 @@
+<!DOCTYPE html>
+<html lang="en" class="no-js">
+	<head>
+		<title>Gallery</title>
+		<meta charset="UTF-8" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge"> 
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<meta name="description" content="Gallery, view our design projects" />
+		<meta name="keywords" content="design, graphics, effect, gallery, web, design, graphic design" />
+		<meta name="author" content="Radevs" />
+
+		<link rel="stylesheet" type="text/css" href="css/component.css" />
+		<link rel="stylesheet" type="text/css" href="css/inner-gallery.css">
+		<link rel="stylesheet" type="text/css" href="../assets/css/nav-button/button.css">
+		<link rel="stylesheet" type="text/css" href="../assets/css/font-awesome.min.css" />
+		<link rel="stylesheet" href="../assets/css/bottom-button/bottom-button.css">
+
+		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/foundation/6.4.1/css/foundation-float.css">
+		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.9.0/css/lightbox.css">
+
+		<script src="../assets/js/jquery.min.js"></script>
+		<script src="../assets/js/snap.svg-min.js"></script>
+		<script src="https://unpkg.com/masonry-layout@4/dist/masonry.pkgd.min.js"></script>
+		<script src="https://unpkg.com/imagesloaded@4/imagesloaded.pkgd.js"></script>
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.9.0/js/lightbox.js"></script>
+
+		<!--[if IE]>
+  		<script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+		<![endif]-->
+	</head>
+	<body>
+
+		<!-- Top Button -->
+		<button class="btn button--fill button--round button--effect-2" id="showMenu">
+						<span class="morph-shape" data-morph-active="M251,150c0,93.5-29.203,143-101,143S49,243.5,49,150C49,52.5,78.203,7,150,7S251,51.5,251,150z">
+							<svg width="100%" height="100%" viewBox="0 0 300 300" preserveAspectRatio="none">
+								<path d="M281,150c0,71.797-59.203,131-131,131S19,221.797,19,150S78.203,19,150,19S281,78.203,281,150z"/>
+							</svg>
+						</span>
+			<span class="button__text"><a href="../index.html" class="a_white"><i class="fa fa-arrow-left" aria-hidden="true"></i></a></span>
+		</button>
+
+		<!-- Bottom Button -->
+		<div class="hi-icon-wrap hi-icon-effect-8 hidden">
+			<a href="#home" class="hi-icon hi-icon-archive smoothScroll"></a>
+		</div>
+
+		<div id="container" class="container intro-effect-side">
+			<header class="header" id="home">
+				<div class="bg-img"></div>
+				<div class="title">
+					<h1>Our Silent Design Projects</h1>
+					<p class="subline">Inspiration for Our Design Projects</p>
+					<p>by <strong>Radev Daniel</strong> &#8212; Posted in <strong>Inspiration</strong> on <strong>May 21, 2014</strong></p>
+				</div>
+			</header>
+
+			<a href="#gallery-cnt" class="smoothScroll">
+				<button class="trigger" data-info="Click to see the gallery"><span>Trigger</span></button>
+			</a>
+
+			<article class="content" id="gallery-cnt">
+				<main>
+					<div class="grid-container grid-container-padded">
+						<!-- Menu -->
+						<div class="row">
+							<div class="small-4 column">
+								<div class="filter-info">
+									<p>Currently showing: <em><span id="current-tag">All</span></em></p>
+								</div>
+							</div>
+
+							<div class="small-8 column clearfix">
+								<div class="float-right filter-options">
+									<a class="button filter-button" href="#">View Filters</a>
+								</div>
+							</div>
+
+							<div class="small-12 clearfix">
+								<div class="float-right filter-menu">
+									<ul class="menu align-right">
+										<li class="cl-effect-2"><a id="all" href="#"><span data-hover="All">All</span></a></li>
+										<li class="cl-effect-2"><a id="logo-design" href="#"><span data-hover="Logo Design">Logo Design</span></a></li>
+										<li class="cl-effect-2"><a id="brochures" href="#"><span data-hover="Brochures">Brochures</span></a></li>
+										<li class="cl-effect-2"><a id="menu-restaurant" href="#"><span data-hover="Menu Restaurant">Menu Restaurant</span></a></li>
+										<li class="cl-effect-2"><a id="others" href="#"><span data-hover="Others">Others</span></a></li>
+									</ul>
+								</div>
+							</div>
+						</div>
+
+						<!-- add extra container element for Masonry -->
+						<div class="grid row">
+
+							<!-- add sizing element for columnWidth -->
+							<div class="grid-sizer small-6 medium-4 large-3 column"></div>
+							<!-- items use Bootstrap .col- classes -->
+							<div class="grid-item small-6 medium-4 large-3 column logo-design">
+								<a href="images/logos/logo.jpg" data-lightbox="cities" data-title="Logo Design, Adobe Illustrator">
+									<!-- wrap item content in its own element -->
+									<div class="back-img">
+										<img class="grid-item-content" src="images/logos/logo.jpg" alt="Logo Design, Adobe Illustrator">
+										<span class="content-item"><em>Logo By RadevsDesign</em></span>
+									</div>
+								</a>
+							</div>
+
+							<div class="grid-item small-6 medium-4 large-3 column brochures">
+								<a href="images/brochures/brochure.jpg" data-lightbox="cities" data-title="Brochure Design, Adobe Photoshop">
+									<div class="back-img">
+										<img class="grid-item-content" src="images/brochures/brochure.jpg" alt="Brochure Design, Adobe Photoshop">
+										<span class="content-item"><em>Brochure By RadevsDesign</em></span>
+									</div>
+								</a>
+							</div>
+
+							<div class="grid-item small-6 medium-4 large-3 column menu-restaurant">
+								<a href="images/menus/menu.jpg" data-lightbox="cities" data-title="Menu Restaurant, Adobe Photoshop">
+									<div class="back-img">
+										<img class="grid-item-content" src="images/menus/menu.jpg" alt="Menu Restaurant, Adobe Photoshop">
+										<span class="content-item"><em>Menu By RadevsDesign</em></span>
+									</div>
+								</a>
+							</div>
+
+							<div class="grid-item small-6 medium-4 large-3 column others">
+								<a href="images/others/1.jpg" data-lightbox="cities" data-title="Beer Flyer Design, Adobe Photoshop">
+									<div class="back-img">
+										<img class="grid-item-content" src="images/others/1.jpg" alt="Beer Flyer Design, Adobe Photoshop">
+										<span class="content-item"><em>Flyer By RadevsDesign</em></span>
+									</div>
+								</a>
+							</div>
+
+							<div class="grid-item small-6 medium-4 large-3 column logo-design">
+								<a href="images/logos/logo2.jpg" data-lightbox="cities" data-title="Logo Design, Adobe Photoshop">
+									<div class="back-img">
+										<img class="grid-item-content" src="images/logos/logo2.jpg" alt="Logo Design, Adobe Photoshop">
+										<span class="content-item"><em>Logo By RadevsDesign</em></span>
+									</div>
+								</a>
+							</div>
+
+							<div class="grid-item small-6 medium-4 large-3 column brochures">
+								<a href="images/brochures/brochure2.jpg" data-lightbox="cities" data-title="Brochure Design, Adobe Indesign">
+									<div class="back-img">
+										<img class="grid-item-content" src="images/brochures/brochure2.jpg" alt="Brochure Design, Adobe Indesign">
+										<span class="content-item"><em>Brochure By RadevsDesign</em></span>
+									</div>
+								</a>
+							</div>
+
+							<div class="grid-item small-6 medium-4 large-3 column menu-restaurant">
+								<a href="images/menus/menu2.jpg" data-lightbox="cities" data-title="Menu Restaurant Design, Adobe Photoshop">
+									<div class="back-img">
+										<img class="grid-item-content" src="images/menus/menu2.jpg" alt="Menu Restaurant Design, Adobe Photoshop">
+										<span class="content-item"><em>Menu By RadevsDesign</em></span>
+									</div>
+								</a>
+							</div>
+
+							<div class="grid-item small-6 medium-4 large-3 column others">
+								<a href="images/others/2.jpg" data-lightbox="cities" data-title="Web Design, Adobe Photoshop">
+									<div class="back-img">
+										<img class="grid-item-content" src="images/others/2.jpg" alt="Web Design, Adobe Photoshop">
+										<span class="content-item"><em>Template By RadevsDesign</em></span>
+									</div>
+								</a>
+							</div>
+
+							<div class="grid-item small-6 medium-4 large-3 column logo-design">
+								<a href="images/logos/logo3.jpg" data-lightbox="cities" data-title="Logo Design, CorelDraw">
+									<div class="back-img">
+										<img class="grid-item-content" src="images/logos/logo3.jpg" alt="Logo Design, CorelDraw">
+										<span class="content-item"><em>Logo By RadevsDesign</em></span>
+									</div>
+								</a>
+							</div>
+
+							<div class="grid-item small-6 medium-4 large-3 column brochures">
+								<a href="images/brochures/brochure3.jpg" data-lightbox="cities" data-title="Brochure Design, Adobe Photoshop">
+									<div class="back-img">
+										<img class="grid-item-content" src="images/brochures/brochure3.jpg" alt="Brochure Design, Adobe Photoshop">
+										<span class="content-item"><em>Brochure By RadevsDesign</em></span>
+									</div>
+								</a>
+							</div>
+
+							<div class="grid-item small-6 medium-4 large-3 column menu-restaurant">
+								<a href="images/menus/menu3.jpg" data-lightbox="cities" data-title="E-Menu Restaurant, Adobe Photoshop">
+									<div class="back-img">
+										<img class="grid-item-content" src="images/menus/menu3.jpg" alt="E-Menu Restaurant, Adobe Photoshop">
+										<span class="content-item"><em>Menu By RadevsDesign</em></span>
+									</div>
+								</a>
+							</div>
+
+							<div class="grid-item small-6 medium-4 large-3 column others">
+								<a href="images/others/3.jpg" data-lightbox="cities" data-title="Magazine Design, Adobe Photoshop">
+									<div class="back-img">
+										<img class="grid-item-content" src="images/others/3.jpg" alt="Magazine Design, Adobe Photoshop">
+										<span class="content-item"><em>Magazine By RadevsDesign</em></span>
+									</div>
+								</a>
+							</div>
+
+							<div class="grid-item small-6 medium-4 large-3 column logo-design">
+								<a href="images/logos/logo4.jpg" data-lightbox="cities" data-title="Logo Design, Adobe Illustrator">
+									<div class="back-img">
+										<img class="grid-item-content" src="images/logos/logo4.jpg" alt="Logo Design, Adobe Illustrator">
+										<span class="content-item"><em>Logo By RadevsDesign</em></span>
+									</div>
+								</a>
+							</div>
+
+							<div class="grid-item small-6 medium-4 large-3 column menu-restaurant">
+								<a href="images/menus/menu4.jpg" data-lightbox="cities" data-title="Menu Restaurant Design, Adobe Photoshop">
+									<div class="back-img">
+										<img class="grid-item-content" src="images/menus/menu4.jpg" alt="Menu Restaurant Design, Adobe Photoshop">
+										<span class="content-item"><em>Menu By RadevsDesign</em></span>
+									</div>
+								</a>
+							</div>
+
+							<div class="grid-item small-6 medium-4 large-3 column others">
+								<a href="images/others/4.jpg" data-lightbox="cities" data-title="Label Design, Adobe Photoshop">
+									<div class="back-img">
+										<img class="grid-item-content" src="images/others/4.jpg" alt="Label Design, Adobe Photoshop">
+										<span class="content-item"><em>Label By RadevsDesign</em></span>
+									</div>
+								</a>
+							</div>
+
+							<div class="grid-item small-6 medium-4 large-3 column others">
+								<a href="images/others/5.jpg" data-lightbox="cities" data-title="Box Perfume Design, Adobe Photoshop">
+									<div class="back-img">
+										<img class="grid-item-content" src="images/others/5.jpg" alt="Box Perfume Design, Adobe Photoshop">
+										<span class="content-item"><em>Box By RadevsDesign</em></span>
+									</div>
+								</a>
+							</div>
+
+						</div>
+
+					</div>
+
+				</main>
+			</article>
+		</div><!-- /container -->
+
+		<script src="js/inner-gallery.js"></script>
+		<script src="../assets/js/classie.js"></script>
+		<script src="../assets/js/modernizr.custom.25376.js"></script>
+		<!--Smooth Scrolling -->
+		<script>
+			$(function() {
+				// This should prevent problems with carousel, scrollspy, etc...
+				$('.smoothScroll').click(function() {
+					setTimeout(function(){ }, 0);
+					if (location.pathname.replace(/^\//, '') == this.pathname.replace(/^\//, '') && location.hostname == this.hostname) {
+						var target = $(this.hash);
+						if(this.hash != "#gallery-cnt"){
+							if (target.length) {
+								$('html,body').animate({
+									scrollTop: target.offset().top
+								}, 800);
+								return false;
+							}
+						}
+						target = target.length ? target : $('[name=' + this.hash.slice(1) + ']');
+						setTimeout(function(){
+							if (target.length) {
+								$('html,body').animate({
+									scrollTop: target.offset().top
+								}, 800);
+								return false;
+							}
+						}, 800);
+
+
+					}
+
+
+				});
+
+			});
+		</script>
+		<!--Bottom Link Appearence -->
+		<script type="application/javascript">
+			function scrollFunc(){
+				let y = window.scrollY;
+				let top = window.pageYOffset;
+
+				let scrollTop     = $(window).scrollTop();
+
+				if(y >=  500){
+					$('.hi-icon-wrap').removeClass('hidden');
+				}else{
+					$('.hi-icon-wrap').addClass('hidden');
+				}
+
+			}
+
+			$(window).scroll(scrollFunc);
+		</script>
+		<!-- Header Effect-->
+		<script>
+			(function() {
+
+				// detect if IE : from http://stackoverflow.com/a/16657946		
+				var ie = (function(){
+					var undef,rv = -1; // Return value assumes failure.
+					var ua = window.navigator.userAgent;
+					var msie = ua.indexOf('MSIE ');
+					var trident = ua.indexOf('Trident/');
+
+					if (msie > 0) {
+						// IE 10 or older => return version number
+						rv = parseInt(ua.substring(msie + 5, ua.indexOf('.', msie)), 10);
+					} else if (trident > 0) {
+						// IE 11 (or newer) => return version number
+						var rvNum = ua.indexOf('rv:');
+						rv = parseInt(ua.substring(rvNum + 3, ua.indexOf('.', rvNum)), 10);
+					}
+
+					return ((rv > -1) ? rv : undef);
+				}());
+
+
+				// disable/enable scroll (mousewheel and keys) from http://stackoverflow.com/a/4770179					
+				// left: 37, up: 38, right: 39, down: 40,
+				// spacebar: 32, pageup: 33, pagedown: 34, end: 35, home: 36
+				var keys = [32, 37, 38, 39, 40], wheelIter = 0;
+
+				function preventDefault(e) {
+					e = e || window.event;
+					if (e.preventDefault)
+					e.preventDefault();
+					e.returnValue = false;  
+				}
+
+				function keydown(e) {
+					for (var i = keys.length; i--;) {
+						if (e.keyCode === keys[i]) {
+							preventDefault(e);
+							return;
+						}
+					}
+				}
+
+				function touchmove(e) {
+					preventDefault(e);
+				}
+
+				function wheel(e) {
+					// for IE
+					if( ie ) {
+						preventDefault(e);
+					}
+				}
+
+				function disable_scroll() {
+					window.onmousewheel = document.onmousewheel = wheel;
+					document.onkeydown = keydown;
+					document.body.ontouchmove = touchmove;
+				}
+
+				function enable_scroll() {
+					window.onmousewheel = document.onmousewheel = document.onkeydown = document.body.ontouchmove = null;  
+				}
+
+				var docElem = window.document.documentElement,
+					scrollVal,
+					isRevealed, 
+					noscroll, 
+					isAnimating,
+					container = document.getElementById( 'container' ),
+					trigger = container.querySelector( 'button.trigger' );
+
+				function scrollY() {
+					return window.pageYOffset || docElem.scrollTop;
+				}
+				
+				function scrollPage() {
+					scrollVal = scrollY();
+					
+					if( noscroll && !ie ) {
+						if( scrollVal < 0 ) return false;
+						// keep it that way
+						window.scrollTo( 0, 0 );
+					}
+
+					if( classie.has( container, 'notrans' ) ) {
+						classie.remove( container, 'notrans' );
+						return false;
+					}
+
+					if( isAnimating ) {
+						return false;
+					}
+					
+					if( scrollVal <= 0 && isRevealed ) {
+						toggle(0);
+					}
+					else if( scrollVal > 0 && !isRevealed ){
+						toggle(1);
+					}
+				}
+
+				function toggle( reveal ) {
+					isAnimating = true;
+					
+					if( reveal ) {
+						classie.add( container, 'modify' );
+					}
+					else {
+						noscroll = true;
+						disable_scroll();
+						classie.remove( container, 'modify' );
+					}
+
+					// simulating the end of the transition:
+					setTimeout( function() {
+						isRevealed = !isRevealed;
+						isAnimating = false;
+						if( reveal ) {
+							noscroll = false;
+							enable_scroll();
+						}
+					}, 600 );
+				}
+
+				// refreshing the page...
+				var pageScroll = scrollY();
+				noscroll = pageScroll === 0;
+				
+				disable_scroll();
+				
+				if( pageScroll ) {
+					isRevealed = true;
+					classie.add( container, 'notrans' );
+					classie.add( container, 'modify' );
+				}
+				
+				window.addEventListener( 'scroll', scrollPage );
+				trigger.addEventListener( 'click', function() { toggle( 'reveal' ); } );
+			})();
+		</script>
+		<!--Nav Button Script -->
+		<script>
+			(function() {
+
+				function extend( a, b ) {
+					for( var key in b ) {
+						if( b.hasOwnProperty( key ) ) {
+							a[key] = b[key];
+						}
+					}
+					return a;
+				}
+
+				function SVGButton( el, options ) {
+					this.el = el;
+					this.options = extend( {}, this.options );
+					extend( this.options, options );
+					this.init();
+				}
+
+				SVGButton.prototype.options = {
+					speed : { reset : 800, active : 500 },
+					easing : { reset : mina.elastic, active : mina.easein }
+				};
+
+				SVGButton.prototype.init = function() {
+					this.shapeEl = this.el.querySelector( 'span.morph-shape' );
+
+					var s = Snap( this.shapeEl.querySelector( 'svg' ) );
+					this.pathEl = s.select( 'path' );
+					this.paths = {
+						reset : this.pathEl.attr( 'd' ),
+						active : this.shapeEl.getAttribute( 'data-morph-active' )
+					};
+
+					this.initEvents();
+				};
+
+				SVGButton.prototype.initEvents = function() {
+					this.el.addEventListener( 'mouseover', this.down.bind(this) );
+					this.el.addEventListener( 'touchstart', this.down.bind(this) );
+
+					this.el.addEventListener( 'mouseup', this.up.bind(this) );
+					this.el.addEventListener( 'touchend', this.up.bind(this) );
+
+					this.el.addEventListener( 'mouseout', this.up.bind(this) );
+				};
+
+				SVGButton.prototype.down = function() {
+					this.pathEl.stop().animate( { 'path' : this.paths.active }, this.options.speed.active, this.options.easing.active );
+				};
+
+				SVGButton.prototype.up = function() {
+					this.pathEl.stop().animate( { 'path' : this.paths.reset }, this.options.speed.reset, this.options.easing.reset );
+				};
+
+				[].slice.call( document.querySelectorAll( 'button.button--effect-2' ) ).forEach( function( el ) {
+					new SVGButton( el, {
+						speed : { reset : 1000, active : 1000 },
+						easing : { reset : mina.elastic, active : mina.elastic }
+					} );
+				} );
+
+			})();
+		</script>
+	</body>
+</html>
