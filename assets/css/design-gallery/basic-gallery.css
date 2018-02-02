@@ -48,8 +48,9 @@ img {
     box-shadow: 0 20px 15px -10px hsla(0,0%,0%,.25);
 }
 .right-banner{
-    text-align: center;
-    display: block;
+    display: flex;
+    justify-content: center;
+    align-items: center;
     flex-basis: calc(30.5% * 2 + 30px);
     flex-grow: 0;
     margin: 0 15px 30px 15px;
@@ -58,6 +59,20 @@ img {
     height: 250px;
     background-color: #1f423c;
     order:2;
+}
+
+.banner-content::after{
+    content: '' ;
+    position: relative;
+    display: block;
+    width: 300px;
+    height: 300px;
+    left: 7%;
+    bottom: 50px;
+    z-index: 2;
+    opacity: .2;
+    background: url("../../../images/radevs-logo/Radevs-Logo2.png");
+    background-size: cover;
 }
 
 .design-fgr:nth-of-type(1){
@@ -93,9 +108,11 @@ img {
 
 .btn-desgn{
     width:100%;
-    max-width: 400px;
     order: 12;
-    alignment: right;
+    max-width: 1175px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: center;
 }
 
 @media screen and (max-width: 1091px) {

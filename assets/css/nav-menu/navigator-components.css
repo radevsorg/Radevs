@@ -88,20 +88,26 @@
 }
 
 
-.outer-nav.left {
-	left: 25%;
-}
-
 .outer-nav.right {
 	right: 25%;
 }
 
-.outer-nav.top {
-	top: 25%;
+@media screen and (max-width: 950px){
+	.outer-nav.right {
+		right: 15%;
+	}
 }
 
-.outer-nav.bottom {
-	bottom: 25%;
+@media screen and (max-width: 730px){
+	.outer-nav.right {
+		right: 5%;
+	}
+}
+
+@media screen and (max-width: 545px){
+	.outer-nav.right {
+		right: 0%;
+	}
 }
 
 .outer-nav a {
@@ -116,7 +122,7 @@
 }
 
 .outer-nav a:hover {
-	color: #009776;
+	color: #418177;
 }
 
 .outer-nav.vertical a {
@@ -180,7 +186,7 @@
 }
 
 .effect-moveleft .outer-nav a:hover {
-	color: #186344;
+	color: #625e3f;
 }
 
 .effect-moveleft.animate .outer-nav a {
