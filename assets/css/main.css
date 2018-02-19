@@ -153,7 +153,6 @@
 
 		.wrapper-cnt > .inner {
 			margin: 0 auto;
-			width: 80rem;
 		}
 
 
@@ -217,9 +216,6 @@
 
 		@media screen and (max-width: 1280px) {
 
-			.wrapper-cnt > .inner {
-				width: 75rem;
-			}
 
 		}
 
@@ -239,10 +235,6 @@
 
 		@media screen and (max-width: 980px) {
 
-			.wrapper-cnt > .inner {
-				width: 90%;
-			}
-
 			.wrapper-cnt.style3 {
 				background-attachment: scroll;
 			}
@@ -253,6 +245,20 @@
 
 			.wrapper-cnt {
 				padding: 3rem 0 1rem 0 ;
+			}
+
+		}
+
+		@media screen and (max-width: 622px){
+			header {
+				height: 50vh;
+			}
+		}
+
+		@media screen and (max-width: 500px){
+
+			.container-services{
+				padding: 0;
 			}
 
 		}

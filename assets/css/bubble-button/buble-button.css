@@ -1,16 +1,5 @@
-.hidden {
-  position: absolute;
-  overflow: hidden;
-  width: 0;
-  height: 0;
-  pointer-events: none;
-}
-.svg-filters{
-  position: relative;
-  width: 80px;
-  height: 80px;
-  z-index: 900000;
-}
+
+
 .safari-warning {
   display: none;
   color: #ff6e00;
@@ -47,11 +36,10 @@
   filter: none !important;
 }
 
-
 .button--4 {
   position: absolute;
   z-index: 90000;
-  left: 47%;
+  left: 49%;
   top:75%;
   line-height: 80px;
   padding: 0;
@@ -117,10 +105,10 @@
 
 @keyframes hue-rotate {
   from {
-    -webkit-filter: hue-rotate(0);
-    -moz-filter: hue-rotate(0);
-    -ms-filter: hue-rotate(0);
-    filter: hue-rotate(0);
+    -webkit-filter: hue-rotate(0deg);
+    -moz-filter: hue-rotate(0deg);
+    -ms-filter: hue-rotate(0deg);
+    filter: hue-rotate(0deg);
   }
   to {
     -webkit-filter: hue-rotate(360deg);
@@ -130,3 +118,21 @@
   }
 }
 
+@media screen and (max-width: 980px){
+  .button--4 {
+    left: 47%;
+  }
+}
+
+@media screen and (max-width: 750px){
+  .button--4 {
+    left: 45%;
+  }
+}
+
+@media screen and (max-width: 622px){
+  .button--4 {
+    left: 44%;
+    top: 50%;
+  }
+}

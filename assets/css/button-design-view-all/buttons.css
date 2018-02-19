@@ -103,6 +103,6 @@
 	.btn-des-more{
 		flex-basis: calc(30.5% * 2 + 30px);
 		max-width: 752px;
-		min-width: 400px;
+		min-width: 300px;
 	}
 }

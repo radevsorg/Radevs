@@ -124,20 +124,8 @@
 	}
 }
 @media screen and (max-width: 622px){
-	.rw-sentence > span{
-		position: inherit;
-		font-size: 16px;
-	}
-
-	.rw-sentence{
-		font-size: 16px;
-	}
-}
-
-@media screen and (max-width: 500px){
 	.rw-wrapper{
 		display: none;
 	}
-
-
 }
+

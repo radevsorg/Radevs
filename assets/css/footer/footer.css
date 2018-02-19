@@ -2,9 +2,6 @@
     padding: 60px 0 0 0;
     background: #111112;
 }
-body{
-    margin: 0;
-}
 .footer-row{
     display: flex;
     flex-wrap: nowrap;
@@ -119,9 +116,9 @@ body{
         text-align: center;
     }
 
-    .footer-effect-links:nth-child(1),
-    .footer-effect-links:nth-child(2),
-    .footer-effect-links:nth-child(3){
+    .footer-article:nth-child(1),
+    .footer-article:nth-child(2),
+    .footer-article:nth-child(3){
         display: none;
     }
 }

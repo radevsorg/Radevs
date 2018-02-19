@@ -127,10 +127,31 @@ img {
     }
 }
 
+@media screen and (max-width: 980px){
+    .banner-content::after{
+        left: 8%;
+    }
+}
+@media screen and (max-width: 735px){
+    .banner-content::after{
+        left: 11%;
+    }
+}
+
+@media screen and (max-width: 42em){
+    .banner-content::after{
+       display: none;
+    }
+
+    .right-banner{
+        display: none;
+    }
+}
+
 @media screen and (max-width: 692px){
     .right-banner{
         order: 1;
-        min-width: 400px;
+        min-width: 320px;
     }
     .design-fgr:nth-of-type(1){
         order: 3;
@@ -138,7 +159,7 @@ img {
     .design-fgr{
         flex-basis: calc(30.5% * 2 + 30px);
         max-width: 752px;
-        min-width: 400px;
+        min-width: 320px;
     }
     .figures-design{
         margin: 15px auto;
